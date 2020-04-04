@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends 'basic_app/basic.html' %}
+{% block body_block %}
+  <h1>Index page</h1>
+  {{ text|upper }}
+  {{ number|add:10 }}
+  {{ text|cut:'hello'}}
+  <!-- This is the custom template filter  -->
+{% endblock %}
